@@ -1,11 +1,8 @@
 # PS12EXE
 
-> [!CAUTION]
-> Do not store passwords in source code ([*](#password-security))
-
 ## Introduction
 
-`ps12exe` is a PowerShell module that lets you create an executable file from a `.ps1` script.
+`ps12exe` is a PowerShell module that allows you to create an executable file from a `.ps1` script.
 
 [![CI](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml/badge.svg)](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml)
 [![PSGallery download num](https://img.shields.io/powershellgallery/dt/ps12exe)](https://www.powershellgallery.com/packages/ps12exe)
@@ -14,26 +11,18 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/steve02081504/ps12exe/badge/master)](https://www.codefactor.io/repository/github/steve02081504/ps12exe/overview/master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-![repo img](https://repository-images.githubusercontent.com/729678966/3ed3f02f-c7c9-4a18-b1f5-255e667643b6)
-
-[![English (United Kingdom)](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/United-Kingdom.png)](./README_EN_UK.md)
-[![中文](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/China.png)](./README_CN.md)
-[![日本語](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/Japan.png)](./README_JP.md)
-[![Français](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/France.png)](./README_FR.md)
-[![Español](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/Spain.png)](./README_ES.md)
-[![हिन्दी](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/India.png)](./README_HI.md)
+![preview](https://github.com/5Noxi/PS12EXE/blob/master/preview.png?raw=true)
 
 ## Installation
 
+You can clone this repository and run `./ps12exe.ps1` directly, or use:
 ```powershell
-Install-Module ps12exe # Install the ps12exe module
-Set-ps12exeContextMenu # Set the right-click menu
+Install-Module ps12exe #Install ps12exe module
+Set-ps12exeContextMenu #Set right-click menu
 ```
 
-(You can also clone this here repo and run `./ps12exe.ps1` directly.)
-
-**Upgrading from PS2EXE to ps12exe? No problem!**  
-PS2EXE2ps12exe can hook the PS2EXE calls into ps12exe. Just uninstall PS2EXE, install this, and keep using PS2EXE like normal.
+**Hard to upgrade from PS2EXE to ps12exe? No problem!**  
+PS2EXE2ps12exe can hooks PS2EXE calls into ps12exe, all you need is just uninstall PS2EXE and install this, then use PS2EXE as normal.
 
 ```powershell
 Uninstall-Module PS2EXE
@@ -42,10 +31,10 @@ Install-Module PS2EXE2ps12exe
 
 ## Usage
 
-### Right-Click Menu
+### Right-click menu
 
-Once you've run `Set-ps12exeContextMenu`, you can right-click any ps1 file to quickly compile it into an exe or open ps12exeGUI with that file.  
-![image](https://github.com/steve02081504/ps12exe/assets/31927825/24e7caf7-2bd8-46aa-8e1d-ee6da44c2dcc)
+Once you have set `Set-ps12exeContextMenu`, you can quickly compile any ps1 file into an exe or open ps12exeGUI on this file by right-clicking on it.  
+![contextm](https://github.com/5Noxi/PS12EXE/blob/master/contextmenu.png?raw=true)
 
 ### GUI Mode
 
@@ -59,7 +48,7 @@ ps12exeGUI
 ps12exe .\source.ps1 .\target.exe
 ```
 
-Compiles `source.ps1` into the executable `target.exe` (if `.\target.exe` is omitted, output goes to `.\source.exe`).
+Compiles `source.ps1` into the executable target.exe (if `.\target.exe` is omitted, output is written to `.\source.exe`).
 
 ```powershell
 '"Hello World!"' | ps12exe
@@ -73,13 +62,16 @@ ps12exe https://raw.githubusercontent.com/steve02081504/ps12exe/master/src/GUI/M
 
 Compiles `Main.ps1` from the internet into the executable `.\Main.exe`.
 
-### Self-Hosted Web Server
+> [!CAUTION]
+> Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security))
+
+### Self-Host WebServer
 
 ```powershell
 Start-ps12exeWebServer
 ```
 
-Starts a web server that lets users compile PowerShell code online.
+Starts a web server that can be used to compile powerShell scripts online.
 
 ## Parameters
 
