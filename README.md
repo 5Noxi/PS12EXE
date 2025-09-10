@@ -2,7 +2,7 @@
 
 ## Introduction
 
-`ps12exe` is a PowerShell module that allows you to create an executable file from a .ps1 script.  
+`ps12exe` is a PowerShell module that allows you to create an executable file from a `.ps1` script.  
 
 [![CI](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml/badge.svg)](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml)
 [![PSGallery download num](https://img.shields.io/powershellgallery/dt/ps12exe)](https://www.powershellgallery.com/packages/ps12exe)
@@ -21,17 +21,17 @@
 [![Español](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/Spain.png)](./docs/README_ES.md)
 [![हिन्दी](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/48/India.png)](./docs/README_HI.md)
 
-## Install
+## Installation
 
 ```powershell
 Install-Module ps12exe #Install ps12exe module
 Set-ps12exeContextMenu #Set right-click menu
 ```
 
-(you can also clone this repository and run `./ps12exe.ps1` directly)
+(You can also clone this repository and run `./ps12exe.ps1` directly)
 
 **Hard to upgrade from PS2EXE to ps12exe? No problem!**  
-PS2EXE2ps12exe can hooks PS2EXE calls into ps12exe, All you need is just uninstall PS2EXE and install this, then use PS2EXE as normal.
+PS2EXE2ps12exe can hooks PS2EXE calls into ps12exe, all you need is just uninstall PS2EXE and install this, then use PS2EXE as normal.
 
 ```powershell
 Uninstall-Module PS2EXE
@@ -45,31 +45,31 @@ Install-Module PS2EXE2ps12exe
 Once you have set `Set-ps12exeContextMenu`, you can quickly compile any ps1 file into an exe or open ps12exeGUI on this file by right-clicking on it.  
 ![image](https://github.com/steve02081504/ps12exe/assets/31927825/24e7caf7-2bd8-46aa-8e1d-ee6da44c2dcc)
 
-### GUI mode
+### GUI Mode
 
 ```powershell
 ps12exeGUI
 ```
 
-### Console mode
+### Console Mode
 
 ```powershell
 ps12exe .\source.ps1 .\target.exe
 ```
 
-compiles `source.ps1` into the executable target.exe (if `.\target.exe` is omitted, output is written to `.\source.exe`).
+Compiles `source.ps1` into the executable target.exe (if `.\target.exe` is omitted, output is written to `.\source.exe`).
 
 ```powershell
 '"Hello World!"' | ps12exe
 ```
 
-compiles `"Hello World!"` into the executable `.\a.exe`.
+Compiles `"Hello World!"` into the executable `.\a.exe`.
 
 ```powershell
 ps12exe https://raw.githubusercontent.com/steve02081504/ps12exe/master/src/GUI/Main.ps1
 ```
 
-compiles `Main.ps1` from the internet into the executable `.\Main.exe`.
+Compiles `Main.ps1` from the internet into the executable `.\Main.exe`.
 
 ### Self-Host WebServer
 
@@ -91,7 +91,7 @@ Starts a web server that can be used to compile powerShell scripts online.
 | GUI multilingual support | ✔️ | ❌ |
 | Syntax check during compilation ✔️ | ✔️ | ❌ |
 | Preprocessing feature | ✔️ | ❌ |
-| `-extract` and other special parameter parsing 🧹 | 🗑️ Removed | 🥲 Requires source code modification |
+| `-extract` and other special parameter parsing |  Removed | Requires source code modification |
 | PR welcome level | Welcome! | 14 PRs, 13 of which were closed |
 
 ### Detailed Comparison
