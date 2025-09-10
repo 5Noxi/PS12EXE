@@ -1,4 +1,4 @@
-# ps12exe
+# PS12EXE
 
 ## Introduction
 
@@ -112,6 +112,6 @@ Compared to [`MScholtes/PS2EXE@678a892`](https://github.com/MScholtes/PS2EXE/tre
 | More improvements | And more... |
 
 > [!CAUTION]
-> Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security-stuff))
+> Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security))
 
 More details: [localed readme](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md).
