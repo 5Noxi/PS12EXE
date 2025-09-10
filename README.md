@@ -4,9 +4,6 @@
 
 `ps12exe` is a PowerShell module that allows you to create an executable file from a `.ps1` script.
 
-> [!NOTE]
-> More details: [localed readme](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md).
-
 [![CI](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml/badge.svg)](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml)
 [![PSGallery download num](https://img.shields.io/powershellgallery/dt/ps12exe)](https://www.powershellgallery.com/packages/ps12exe)
 [![GitHub issues by-label bug](https://img.shields.io/github/issues/steve02081504/ps12exe/bug?label=bugs)](https://github.com/steve02081504/ps12exe/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
@@ -65,6 +62,9 @@ ps12exe https://raw.githubusercontent.com/steve02081504/ps12exe/master/src/GUI/M
 
 Compiles `Main.ps1` from the internet into the executable `.\Main.exe`.
 
+> [!CAUTION]
+> Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security))
+
 ### Self-Host WebServer
 
 ```powershell
@@ -105,5 +105,5 @@ Compared to [`MScholtes/PS2EXE@678a892`](https://github.com/MScholtes/PS2EXE/tre
 | Separated cs files from ps1 files | Easier to read and maintain |
 | More improvements | And more... |
 
-> [!CAUTION]
-> Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security))
+> [!NOTE]
+> More details: [localed readme](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md).
