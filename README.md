@@ -89,7 +89,7 @@ Starts a web server that can be used to compile powerShell scripts online.
 | Command to generate hello world | `'"Hello World!"' \| ps12exe` | `echo "Hello World!" *> a.ps1; PS2EXE a.ps1; rm a.ps1` |
 | Size of the generated hello world executable file | `1024` bytes | `25088` bytes |
 | GUI multilingual support | ✔️ | ❌ |
-| Syntax check during compilation ✔️ | ✔️ | ❌ |
+| Syntax check during compilation | ✔️ | ❌ |
 | Preprocessing feature | ✔️ | ❌ |
 | `-extract` and other special parameter parsing |  Removed | Requires source code modification |
 | PR welcome level | Welcome! | 14 PRs, 13 of which were closed |
