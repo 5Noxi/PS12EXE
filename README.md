@@ -2,7 +2,10 @@
 
 ## Introduction
 
-`ps12exe` is a PowerShell module that allows you to create an executable file from a `.ps1` script.  
+`ps12exe` is a PowerShell module that allows you to create an executable file from a `.ps1` script.
+
+> [!NOTE]
+> More details: [localed readme](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md).
 
 [![CI](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml/badge.svg)](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml)
 [![PSGallery download num](https://img.shields.io/powershellgallery/dt/ps12exe)](https://www.powershellgallery.com/packages/ps12exe)
@@ -15,12 +18,11 @@
 
 ## Installation
 
+You can clone this repository and run `./ps12exe.ps1` directly, or use:
 ```powershell
 Install-Module ps12exe #Install ps12exe module
 Set-ps12exeContextMenu #Set right-click menu
 ```
-
-(You can also clone this repository and run `./ps12exe.ps1` directly)
 
 **Hard to upgrade from PS2EXE to ps12exe? No problem!**  
 PS2EXE2ps12exe can hooks PS2EXE calls into ps12exe, all you need is just uninstall PS2EXE and install this, then use PS2EXE as normal.
@@ -105,5 +107,3 @@ Compared to [`MScholtes/PS2EXE@678a892`](https://github.com/MScholtes/PS2EXE/tre
 
 > [!CAUTION]
 > Do not store passwords in source code ([*](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md#password-security))
-
-More details: [localed readme](https://github.com/5Noxi/ps12exe/blob/master/docs/README_EN_US.md).
