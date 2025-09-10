@@ -35,7 +35,7 @@ Install-Module PS2EXE2ps12exe
 ### Right-click menu
 
 Once you have set `Set-ps12exeContextMenu`, you can quickly compile any ps1 file into an exe or open ps12exeGUI on this file by right-clicking on it.  
-![image](https://github.com/steve02081504/ps12exe/assets/31927825/24e7caf7-2bd8-46aa-8e1d-ee6da44c2dcc)
+![contextm](https://github.com/5Noxi/PS12EXE/blob/master/contextmenu.png?raw=true)
 
 ### GUI Mode
 
