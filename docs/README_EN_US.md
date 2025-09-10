@@ -6,7 +6,7 @@
 
 ## Introduction
 
-ps12exe is a PowerShell module that lets you create an executable file from a .ps1 script.
+`ps12exe` is a PowerShell module that lets you create an executable file from a `.ps1` script.
 
 [![CI](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml/badge.svg)](https://github.com/steve02081504/ps12exe/actions/workflows/CI.yml)
 [![PSGallery download num](https://img.shields.io/powershellgallery/dt/ps12exe)](https://www.powershellgallery.com/packages/ps12exe)
@@ -151,7 +151,7 @@ Help             : Show this here help message.
 
 ## Remarks
 
-### Error Handlin
+### Error Handling
 
 Unlike most PowerShell functions, ps12exe sets the `$LastExitCode` variable to show if somethin' went sideways, but it ain't guaranteein' no exceptions.  
 You can have a butcher's at whether it's gone wrong like this, see:
@@ -180,7 +180,7 @@ Different `$LastExitCode` values tell ya what kinda screw-up happened.
 
 ### Preprocessing
 
-ps12exe pre-processes the script before compiling.
+`ps12exe` pre-processes the script before compiling.
 
 ```powershell
 # Read the program frame from the ps12exe.cs file
@@ -336,6 +336,9 @@ The pragma command can set any compilation parameter:
 When the code gets here, the process exits with the given exit code and deletes the EXE.
 
 ### Minifyer
+
+> [!TIP]
+> Use [PowerShell Minifier](https://github.com/5Noxi/PowerShell-Minifier) before compiling your code.
 
 Since ps12exe's "compilation" embeds everything in the script as a resource in the resulting executable, the executable will be large if the script has a lot of useless strings.
 You can use `-Minifyer` to specify a script block that processes the script after preprocessing but before compilation to get a smaller executable.
